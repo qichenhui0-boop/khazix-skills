@@ -12,20 +12,52 @@ Agent skills for QoderWork — curated best practices for specialized tasks.
 
 **触发场景**: 竞品分析、市场研究、产品研究、行业报告、竞争分析、产品对比、演进分析、赛道分析、产品形态研究。
 
+---
+
+### lingyang-article-writer
+
+为瓴羊 Quick BI 和 Dataphin 撰写专业公众号宣传文章。支持产品宣传文、客户案例、技术解析、趋势洞察、产品对比等多种文章类型。
+
+严格对齐瓴羊品牌风格和 Quick BI 官网设计体系。
+
+**触发场景**: 写公众号文章、Quick BI 文章、Dataphin 文章、产品宣传、功能发布文、客户案例、技术架构文、方法论文章、选型指南。
+
+---
+
+### lingyang-ai-script-writer
+
+撰写瓴羊产品 AI 口播短视频脚本。用于生成符合"痛点前置+观点先行+金句开头"结构的口播文案，适用于数据产品、AI 工具类产品的短视频营销。
+
+**触发场景**: 口播脚本、短视频文案、产品推广脚本。
+
+---
+
+### quickbi-smartq-chat
+
+Quick BI 智能分析技能，支持数据集问数、文件问数、文档解析、仪表板技能生成、数据解读、数据报告等场景。
+
+**触发场景**: 数据分析、问数、智能问数、查数据、分析文件、文档解析、仪表板技能、数据解读、数据报告。
+
+---
+
 ## 安装方式
 
 ### 一键安装（推荐）
 
-如果你使用 QoderWork，只需在对话框中输入：
-
-```
-安装 ai-product-market-research 技能
-```
-
-或通过命令行安装：
+如果你使用 QoderWork，可通过命令行一键安装任意技能：
 
 ```bash
+# 安装市场研究技能
 npx skills add qichenhui0-boop/khazix-skills@ai-product-market-research -g -y
+
+# 安装公众号写作技能
+npx skills add qichenhui0-boop/khazix-skills@lingyang-article-writer -g -y
+
+# 安装口播脚本技能
+npx skills add qichenhui0-boop/khazix-skills@lingyang-ai-script-writer -g -y
+
+# 安装 Quick BI 智能分析技能
+npx skills add qichenhui0-boop/khazix-skills@quickbi-smartq-chat -g -y
 ```
 
 ### 手动安装
@@ -35,19 +67,13 @@ npx skills add qichenhui0-boop/khazix-skills@ai-product-market-research -g -y
 git clone https://github.com/qichenhui0-boop/khazix-skills.git
 ```
 
-2. 将 `ai-product-market-research` 文件夹复制到你的 skills 目录：
+2. 将目标技能文件夹复制到你的 skills 目录：
    - macOS/Linux: `~/.qoderwork/skills/`
    - Windows: `%USERPROFILE%\.qoderwork\skills\`
 
 ## 使用方法
 
-安装后，在 QoderWork 中直接描述你的需求即可触发此技能，例如：
-
-- "帮我分析一下智能客服行业的竞品"
-- "做一个AI数据产品的市场研究报告"
-- "分析一下BI产品的演进趋势"
-
-技能会自动执行10阶段研究工作流，生成专业报告。
+安装后，在 QoderWork 中直接描述你的需求即可触发对应技能。
 
 ## 报告示例
 
